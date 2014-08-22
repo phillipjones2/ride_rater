@@ -65,7 +65,17 @@
       <p>Use this site to rate your pedicab experience</p>
     <form action = "FormProcessor.html" method = "get" enctype = "application/x-www-form-urlencoded">
         <table border = "0">
-        <p>What pedicab company did you use?</p>
+        <p>What type of ride did you use?</p>
+        <p><select name = "ride">
+                <option value = "ride">RIDE TYPE</option>
+                <option value = "taxi">Taxi</option>
+                <option value = "pedicab">Pedicab</option>
+                <option value = "bus">Bus</option>
+                <option value = "uber">Uber</option>
+                <option value = "lyft">Lyft</option>
+                <option value = "other">Other</option>
+            </select></p>
+        <p>What company did you use?</p>
         <p><select name = "pedicab-company">
                 <option value = "company">PICK THE PEDICAB COMPANY</option>
                 <option value = "movemint">Movemint</option>
@@ -76,7 +86,7 @@
                 <option value = "roadkill">Roadkill Pedicabs</option>
                 <option value = "other">Other</option>
             </select></p>
-            <p>What is the pedicab number<br/>
+            <p>What is the vehicle number<br/>
             <input type = "text" name ="pedicab_number" size = "10" maxlength = "10" onblur = "return checkForNumber(this.value);"/></p>
             <p>Who was your pedicab driver<br />
             <input type = "text" name = "pedicab-driver" size = "56" /></p>
@@ -87,7 +97,16 @@
                 <option value = "3">3</option>
                 <option value = "3">4</option>
             </select></p>
-            <h3>Rate your pedicab experience</h3>
+            <input type = "text" name = "pedicab-driver" size = "56" /></p>
+            <p><select name = "passengers">
+                <option value = "distance">How far was your ride?</option>
+                <option value = "1">a couple blocks</option>
+                <option value = "2">less than a mile</option>
+                <option value = "3">1 - 5 miles</option>
+                <option value = "3">6 - 20 miles</option>
+                <option value = "4">really far!!</option>
+            </select></p>
+            <h3>Rate your ride experience</h3>
             <table border = "0">
                 <colgroup align = "left" width = "64" />
                 <colgroup span = "4" align = "center" width = "64" />
