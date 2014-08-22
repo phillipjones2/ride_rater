@@ -42,7 +42,56 @@
         <h1>Ride Rater</h1>
         <p></p>
       </header>
+      <p>Use this site to rate your pedicab experience</p>
+    <form action = "FormProcessor.html" method = "get" enctype = "application/x-www-form-urlencoded">
+        <table border = "0">
+        <p>What pedicab company did you use?</p>
+        <p><select name = "pedicab-company">
+                <option value = "company">PICK THE PEDICAB COMPANY</option>
+                <option value = "movemint">Movemint</option>
+                <option value = "capital">Capital Pedicabs</option>
+                <option value = "dirtnail">DirtNail Pedicab</option>
+                <option value = "metrocycle">Metrocycle Pedicabs</option>
+                <option value = "red devil">Red Devil Rides</option>
+                <option value = "roadkill">Roadkill Pedicabs</option>
+                <option value = "other">Other</option>
+            </select></p>
+            <p>What is the pedicab number<br/>
+            <input type = "text" name ="pedicab_number" size = "10" maxlength = "10" onblur = "return checkForNumber(this.value);"/></p>
+            <p>Who was your pedicab driver<br />
+            <input type = "text" name = "pedicab-driver" size = "56" /></p>
+            <p><select name = "passengers">
+                <option value = "passengers">How many passengers?</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "3">4</option>
+            </select></p>
+            <h3>Rate your pedicab experience</h3>
+            <table border = "0">
+                <colgroup align = "left" width = "64" />
+                <colgroup span = "4" align = "center" width = "64" />
+                <tr>
+                    <td><input type = "radio" name = "rate" value = "*" />*</td>
+                    <td><input type = "radio" name = "rate" value = "**" />**</td>
+                    <td><input type = "radio" name = "rate" value = "***" />***</td>
+                    <td><input type = "radio" name = "rate" value = "****" />****</td>
+                    <td><input type = "radio" name = "rate" value = "*****" />*****</td>
+                </tr>
+            </table>
+            <p>User name<br />
+            <input type = "text" name = "userName" size = "50" /></p>
+            <p>Password<br />
+            <input type = "password" name = "password" size = "50" /></p>
+            <p>Confirm password<br/>
+            <input type = "password" name = "password_confirm" size = "50" onblur = "confirmPassword();" /></p>
+        </table>
+        <p><input type = "submit" value = "Submit" />&nbsp;
+        <input type = "reset" /></p>
+    </form>
+    <script type="text/javascript">
 
+    </script>
       <div id="banner">
         <span id="logo"></span>
 
